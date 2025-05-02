@@ -1,0 +1,46 @@
+<!-- Exercise 7a: Making table with table, thead, th, tbody, tr, td tags -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 7a</title>
+    <style>
+        td{
+            border: 2.5px double lightgray;
+        }
+    </style>
+</head>
+
+<body align="center" style="background-image: url(../img/carpet.jpg);">
+  <table cellspacing="2.5px" cellpadding="25px">
+    <thead style="visibility: hidden;">
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tr>
+      <td style="background-color: white;">1</td>
+      <td colspan="4" style="background-color: white;">2</td>
+    </tr>
+    <tr>
+      <td rowspan="3" style="background-color: white;">3</td>
+      <td style="background-color: #FF8900;">4</td>
+      <td style="background-color: #FF8900;">5</td>
+      <td colspan="2" rowspan="2" style="background-color: #FFFF00;">6</td>
+    </tr>
+    <tr>
+      <td style="background-color: #FF8900;">7</td>
+      <td style="background-color: #FF8900;">8</td>
+    </tr>
+    <tr>
+      <td colspan="2" style="background-color: #FFFF00;">9</td>
+      <td colspan="2" style="background-color: #FFFF00;">10</td>
+    </tr>
+  </table>
+</body>
+</html>
