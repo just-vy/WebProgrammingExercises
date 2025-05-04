@@ -1,0 +1,49 @@
+<!-- Exercise 9d: using to form, table, input email, textarea, submit tags to make a form -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 9d</title>
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <p>Use the following form to send a message to Example Cafe</p>
+    <form action="" method="post">
+        <table>
+            <thead hidden="true">
+                <tr>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Your email</td>
+                    <td><input type="email" name="txtEmail" size="20" maxlength="20"></td>
+                </tr>
+                <tr>
+                    <td>Message</td>
+                    <td><textarea name="" id="" cols="65" rows="10"></textarea></td>
+                </tr>
+                <tr>
+                    <td>How did you hear of us?</td>
+                    <td>
+                        <select name="txtHear" style="padding-right: 75px;">
+                            <option value="Google">Google</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Newsletter</td>
+                    <td><input type="checkbox" name="chkNewsletter" checked>Ensure this box is cheked if you would like to recieve email updates</td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Send message"></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>
