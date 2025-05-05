@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 9g</title>
+    <style>
+        span>input{
+            border: 2px inset;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Travel reservation form</h1>
+        <h2>* denotes mandotory</h2>
+    </header>
+    <section>
+        <label for="" name="lblFullName">Full name*:</label><br>
+        <input type="text" name="txtFullName" style="border: 2px solid gray; border-radius: 3.5px;" placeholder="FirstName LastName"><br>
+
+        <span>
+            <label for="" name="lblEmail">Email address*:</label><br>
+            <input type="email" name="txtEmail" placeholder="EMAIL_ADDRESS"><br>
+            <label for="" name="lblPackage">Select Tour Package* :</label><br>
+            <select name="txtPackage" style="padding-right: 40px;">
+                <option value="Goa">Goa</option>
+            </select><br>
+            <label for="" name="lblArrivalDate">Arrival date*:</label><br>
+            <input type="text" name="txtArrivalDate" placeholder="m/d/y"><br>
+            <label for="" name="lblNumberOfPersons">Number of persons*:</label><br>
+            <input type="text" name="txtNumberOfPersons" placeholder="UNKNOWN_TYPE"><br>
+            <label for="" name="lblQuestion">What would you want to avail?*</label><br>
+            <label for="" name="lblBoarding">Boarding</label><input type="checkbox" name="chkBoarding"><br>
+            <label for="" name="lblFooding">Fooding</label><input type="checkbox"><br>
+            <label for="" name="lblSightSeeing">Sight seeing</label><input type="checkbox"><br>
+            <label for="" name="lblDiscountCode">Discount Coupon code:</label><br>
+            <input type="text" name="DiscountCode" placeholder="UNKNOWN_TYPE"><br>
+            <label for="" name="lblTermsOfConditions">Terms and conditions*</label><br>
+            <input type="radio" name="radAgree">I agree
+            <input type="radio" name="radDisagree">I disagree<br>
+        </span>
+        <input type="submit" value="Complete reservation">
+    </section>
+</body>
+</html>
