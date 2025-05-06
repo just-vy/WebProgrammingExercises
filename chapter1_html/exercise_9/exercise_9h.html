@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 9h</title>
+    <style>
+        *{
+            font-family: sans-serif
+        }
+        #header>h2,#footer{
+            text-align: center;
+        }
+        #footer>input,button{
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        #footer{
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        #section{
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        tr>th, tr>td{
+            padding-left: 7.5px;
+            padding-right: 7.5px;
+        }
+        #txtYear{width: 50px;}
+        #txtDate{width: 45px;}
+    </style>
+</head>
+<body bgcolor="#FFD078">
+    <form action="" method="post">
+        <div id="header">
+            <h2>Survey Form</h2>
+            <p>If you are interested in purchasing one or more of our products, before ordering please complete some or all of the following survey for our marketing department. &nbsp;Answering any question is optional, and all information will be kept strictly confiential. &nbsp;Thank you very much for your time!</p>
+        </div>
+
+        <div id="section">
+            <table cellspacing="5px">
+                <thead hidden="true">
+                    <tr>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1.</td>
+                        <td>What is your name?</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="text" size="40"></td>
+                    </tr>
+
+                    <tr>
+                        <td>2.</td>
+                        <td>What is your date of birth?</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            Month:
+                            <select name="txtMonth">
+                                <option value="January">January</option>
+                                <option value="February">February</option>
+                                <option value="March">March</option>
+                                <option value="April">April</option>
+                                <option value="May">May</option>
+                                <option value="June">June</option>
+                                <option value="July">July</option>
+                                <option value="August">August</option>
+                                <option value="September">September</option>
+                                <option value="October">October</option>
+                                <option value="November">November</option>
+                                <option value="December">December</option>
+                            </select>
+                            Date:
+                            <select id="txtDate">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                            </select>
+                            Year:
+                            <input type="number" size="4" maxlength="4" id="txtYear" value="19">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>3.</td>
+                        <td>What is your mailing address (if you would like to have a hard copy of our catalog sent to you)?</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><textarea name="txtMailingAddress" id="" cols="52" rows="4">Number/P,O. Box/Route: &#13;Street/Avenue/Road: &#13;City: &#13;State/Zip: 
+                        </textarea></td>
+                    </tr>
+
+                    <tr>
+                        <td>4.</td>
+                        <td>What is your email address?</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="email" name="txtEmail" size="25"></td>
+                    </tr>
+
+                    <tr>
+                        <td>5.</td>
+                        <td>Have you viewed our online product catalog?</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="radio" name="radYes">Yes
+                            <input type="radio" name="radNo">No
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>6.</td>
+                        <td>If so, what product(s), besides the one you are ordering, might you be interested in purchasing in the future? (Check all thet apply.)</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="checkbox" name="chkVCR">VCR<br>
+                            <input type="checkbox" name="chkBigScreenTV">Big Screen TV<br>
+                            <input type="checkbox" name="chkAudioEquipment">Audio Equipment<br>
+                            <input type="checkbox" name="chkVideoEquipment">Video Equipment<br>
+                            <input type="checkbox" name="chkCameraEquipment">Camera Equipment<br>
+                            <input type="checkbox" name="chkOther">Other
+                            <input type="text" name="txtOther" size="45" value="Please List: "><br>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>7.</td>
+                        <td>Do you have any questions, comments or suggestions before proceeding to the Order Form?</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <textarea name="txtQuestion" cols="60" rows="6">Your Input: </textarea>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div id="footer">
+            <input type="submit" value="Send Form" name="btnSendForm">
+            <input type="reset" value="Clear Form">
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 9i</title>
+    <style>
+        form>div{
+            padding: 10px;
+        }
+        #txtEncryption{
+            border: 2px solid #80A1D6;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <div>
+            <span>Browser:</span>
+            <input type="text" name="txtBrowser" list="browser">
+            <datalist id="browser">
+                <option value="Chrome">Chrome</option>
+                <option value="Edge">Edge</option>
+                <option value="Firefox">Firefox</option>
+                <option value="Opera">Opera</option>
+                <option value="Brave">Brave</option>
+            </datalist><br>
+        </div>
+
+        <div>
+            <span>Username:</span>
+            <input type="text" name="Username">
+        </div>
+        
+        <div>
+            <span>Encryption:</span>
+            <select id="txtEncryption" style="padding-right: 15px;">
+                <option value="2048">2048 (High Grade)</option>
+            </select>
+        </div>
+
+        <div>
+            <span>0</span>
+            <input type="range" name="dbRange">
+            <span>100</span>
+        </div>
+
+        <div><input type="number" name="txtRange" value="50"></div>
+
+        <div>
+            <span>Birthday: </span>
+            <input type="date" name="txtBirthday">
+        </div>
+
+        <div>
+            <span>Select your favorite color: </span>
+            <input type="color" name="txtColor" value="#FF0000">
+        </div>
+
+        <div>
+            <span>Birthday (month and year):</span>
+            <input type="month" name="txtBirthdayMonth">
+        </div>
+
+        <div>
+            <span>Select a week: </span>
+            <input type="week" name="txtWeek">
+        </div>
+
+        <div>
+            <span>Select a time: </span>
+            <input type="time" name="txtTime">
+        </div>
+
+        <div>
+            <span>Birthday (date and time): </span>
+            <input type="datetime" name="" id="">
+        </div>
+
+        <div>
+            <span>E-mail: </span>
+            <input type="email" name="txtEmail">
+        </div>
+
+        <div>
+            <span>Search Google: </span>
+            <input type="search" name="txtSearch">
+        </div>
+
+        <div>
+            <span>Add your homepage: </span>
+            <input type="url" name="txtHomepage">
+        </div>
+
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+
+    <footer>
+        <p><b>Note:</b> The datalist tag is not supported in Safari or IE9 (and earlier)</p>
+    </footer>
+</body>
+</html>
