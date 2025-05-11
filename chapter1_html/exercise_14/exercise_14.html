@@ -8,10 +8,15 @@
         *{
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-weight: normal;
+            margin: 0px;
+        }
+        nav>ul{
+            display: inline-flex;
+            padding: 0px;
+            margin: 0px;
         }
         nav>ul>li{
             list-style: none;
-            display: inline-flex;
             padding: 10px;
         }
         nav>ul>li:hover{
@@ -22,10 +27,8 @@
         }
         nav{
             background-color: #626262;
-            height: 40px;
-        }
-        div{
-            padding: 1px;
+            height: fit-content;
+            width: 100%;
         }
         h1{
             font-size: 30px;
@@ -39,17 +42,26 @@
         h3>a{
             color: #8CC10C;
         }
-        aside>div>a{
-            color: black;
-        }
-        aside>div>a:hover{
-            font-weight: bold;
-        }
         h3>a:hover{
             font-weight: bold;
         }
-        span{
-            font-size: xx-small;
+        aside>ul>li{
+            list-style: none;
+            padding: 1px;
+        }
+        aside>ul{
+            margin: 0px;
+            padding: 0px;
+            display: inline;
+        }
+        aside>ul>li>a{
+            color: black;
+        }
+        aside>ul>li:first-child{
+            font-size: large;
+        }
+        aside>ul>li>a:hover, aside>ul>li>a>h3:hover{
+            font-weight: bold;
         }
     </style>
 </head>
@@ -60,7 +72,7 @@
         </a>
     </header>
 
-    <nav align="center">
+    <nav>
         <ul>
             <li><a href="">
                 <img src="../img/codicon_home.png" alt="">
@@ -77,32 +89,36 @@
     </nav>
 
     <aside style="width: 30%; float: left; background-color: #F1F1F1;">
-        <h3>HTML Tutorial</h3>
-        <div><a href="">HTML HOME</a></div>
-        <div><a href="">HTML Introduction</a></div>
-        <div><a href="">HTML Editors</a></div>
-        <div><a href="">HTML Basic</a></div>
-        <div><a href="">HTML Elements</a></div>
-        <div><a href="">HTML Attributes</a></div>
-        <div><a href="">HTML Headings</a></div>
-        <div><a href="">HTML Paragraphs</a></div>
-        <div><a href="">HTML Styles</a></div>
-        <div><a href="">HTML Formatting</a></div>
-        <div><a href="">HTML Quotations</a></div>
-        <div><a href="">HTML Computercode</a></div>
-        <div><a href="">HTML Comments</a></div>
-        <div><a href="">HTML CSS</a></div>
-        <div><a href="">HTML Links</a></div>
-        <div><a href="">HTML Images</a></div>
-        <div><a href="">HTML Tables</a></div>
-        <div><a href="">HTML Lists</a></div>
-        <div><a href="">HTML Blocks</a></div>
+        <ul>
+            <li>
+                <a href=""><h3>HTML Tutorial</h3></a>
+            </li>
+            <li><a href="">HTML HOME</a></li>
+            <li><a href="">HTML Introduction</a></li>
+            <li><a href="">HTML Editors</a></li>
+            <li><a href="">HTML Basic</a></li>
+            <li><a href="">HTML Elements</a></li>
+            <li><a href="">HTML Attributes</a></li>
+            <li><a href="">HTML Headings</a></li>
+            <li><a href="">HTML Paragraphs</a></li>
+            <li><a href="">HTML Styles</a></li>
+            <li><a href="">HTML Formatting</a></li>
+            <li><a href="">HTML Quotations</a></li>
+            <li><a href="">HTML Computercode</a></li>
+            <li><a href="">HTML Comments</a></li>
+            <li><a href="">HTML CSS</a></li>
+            <li><a href="">HTML Links</a></li>
+            <li><a href="">HTML Images</a></li>
+            <li><a href="">HTML Tables</a></li>
+            <li><a href="">HTML Lists</a></li>
+            <li><a href="">HTML Blocks</a></li>
+        </ul>
     </aside>
 
-    <section style="width: 70%; float: right;">
-        <div>
+    <section style="width: 70%; float: right; display: inline-block;">
+        <div style="width: 100%;">
             <a href="">
-                <img src="../img/file_api.png" alt="file_api.png" style="width: 100%;">
+                <img src="../img/file_api.png" alt="file_api.png">
             </a>
         </div>
         <div style="height: 100px;">
@@ -114,15 +130,14 @@
                 <a href="" style="float: right">Next Chapter &#187;</a>
             </h3>
         </div>
-        <div align="center">
+        <div align="center" style="height: 150px;">
             <img src="../img/html5.png" alt="" style="float: left;">
-            <div>
+            <span>
                 <p>With HTML you can create your own Web site.</p>
                 <p>This tutorial teaches you everything about HTML.</p>
                 <p>HTML is wasy to learn - You will enjoy it.</p>
-            </div>
+            </span>
         </div>
-        <hr width="1000" style="width: 100%;">
         <div style="float: left">
             <h2>Examples in Every Chapter</h2>
             <p>This HTML tutorial contains hundreds of HTML examples.</p>

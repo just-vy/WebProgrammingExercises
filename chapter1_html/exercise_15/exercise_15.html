@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 15</title>
+    <style>
+        *{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            box-sizing: border-box;
+            margin: 0px;
+        }
+        body{
+            border-right: 10px solid #025A9A;
+        }
+        header, aside:nth-child(1){
+            background-color: #EEEEEE;
+        }
+        aside:nth-child(1){
+            width: 155px;
+            text-indent: 10px;
+            padding-top: 50px;
+        }
+        nav>ul>li, aside>ul>li{
+            list-style: none;
+            padding: 10px;
+        }
+        nav>ul>li:nth-child(1), nav>ul>li:nth-child(2), nav>ul>li:nth-child(3){
+            border-right: 2px inset #E8E7E7;
+        }
+        nav>ul>li>a{
+            color: #1064A1;
+            text-decoration: none;
+        }
+        aside>ul>li>a{
+            color: #025A9A;
+            text-decoration: none;
+        }
+        nav>ul>li>a>h1{
+            font-weight: normal;
+            font-size: 20px;
+        }
+        aside>ul>li>a>h1{
+            font-size: 20px;
+        }
+        nav>ul, aside>ul{
+            padding: 0px;
+            margin: 0px;
+        }
+        nav>ul{
+            display: inline-flex;
+        }
+        aside>ul{
+            display: inline-flexbox;
+            padding-bottom: 25px;
+        }
+        nav{
+            margin: 20px;
+        }
+        select{
+            border: 1px solid gray;
+        }
+        #views, input{
+            background-color: #E8E7E7;
+            border: 2px inset #EEEEEE;
+        }
+        aside>ul>li:nth-child(2), aside>ul>li:nth-child(3), summary{
+            border-bottom: 2px inset #E8E7E7;
+        }
+        aside>ul>li:first-child{
+            width: 160px;
+            background-color: #E7E6E6;
+            box-shadow: 1px 5px 10px gray;
+        }
+        #aside-2>ul>li:first-child{
+            width: 160px;
+            background-color: #FCFBFB;
+            box-shadow: 1px 5px 10px gray;
+            margin-top: 50px;
+        }
+        aside>ul>li:nth-child(2){
+            padding-top: 25px;
+        }
+        section{
+            margin: 50px 25px 0px 25px;
+            padding: 10px 20px 10px 20px;
+            background-color: #F1F7FB;
+        }
+        summary{
+            padding-bottom: 10px;
+        }
+        summary>span:first-child{
+            font-size: 22.5px;
+            color: #025A9A;
+            font-weight: 500;
+        }
+        #aside-2>div>a{
+            color: black;
+            text-decoration: none;
+        }
+        #aside-2>div>a:hover{
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        a:hover{
+            text-decoration: underline;
+        }
+        u{
+            text-decoration-color: #8bafc9;
+        }
+        #aside-2>div:nth-child(2){
+            color: #1064A1;
+        }
+        #aside-2{
+            width: 150px;
+            margin-right: 10px
+        }
+        details>div{
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header style="display: inline-block; width: 100%;">
+        <img src="../img/w3c.png" alt="" style="float: left; box-shadow: 0px 5px 40px 5px #555555;">
+        <div id="views" style="float: left; margin: 5px 10px 5px 10px; padding: 5px 10px 5px 10px; border-radius: 5px;">
+            <span>Views:</span>
+            <span>desktop</span>
+            <span style="color: grey; border-bottom: 2px solid #8bafc9;">mobile</span>
+            <span style="color: grey; border-bottom: 2px solid #8bafc9;">print</span>
+        </div>
+        <div style="float: right; margin: 5px 10px 5px 10px">
+            <select name="" id="" style="padding-right: 75px;">
+                <option value="">W3C By Region</option>
+            </select>
+            <button style="background-color: #555555; color: white; font-weight: bold; border-radius: 2.5px;">Go</button>
+        </div>
+        <nav style="float: left;">
+            <ul>
+                <li><a href=""><h1>STANDARDS</h1></a></li>
+                <li><a href=""><h1>PARTICIPATE</h1></a></li>
+                <li><a href=""><h1>MEMBERSHIP</h1></a></li>
+                <li><a href=""><h1>ABOUT W3C</h1></a></li>
+            </ul>
+        </nav>
+        <div style="float: right;">
+            <input type="search" name="" id="" style="background-image: url(../img/googleSearch.png); height: 30px; width: 130px; margin: 0px 25px 0px 0px; border-radius: 5px;">
+        </div>
+    </header>
+
+    <div style="display: flex;">
+        <aside style="float: left;">
+            <ul>
+                <li><a href="">
+                    <h1>
+                        <div>TECHNICAL</div>
+                        <div>REPORTS <img src="../img/icon.png" alt=""></div>
+                    </h1>
+                </a></li>
+                <li><a href="">By date</a></li>
+                <li><a href="">By group</a></li>
+            </ul>
+            <ul>
+                <li><a href="">
+                    <h1>
+                        <div>WEB AND</div>
+                        <div>INDUSTRY <img src="../img/icon.png" alt=""></div>
+                    </h1>
+                </a></li>
+                <li><a href="">Automotive</a></li>
+                <li><a href="">
+                    <div>Digital</div>
+                    <div>Publishing</div>
+                </a></li>
+            </ul>
+        </aside>
+
+        <section>
+            <details OPEN>
+                <summary>
+                    <span>MathML 3.0 Becomes ISO/IEC International Standard</span><br>
+                    <span>23 June 2015 | </span>
+                    <span><u style="color: #013a63;">Archive</u></span>
+                </summary>
+                <div style="width: 350px;">
+                    <div style="padding-top: 25px">
+                        Today the <u style="color: cornflowerblue;">World Wide Web Consortium (W3C)</u>, together with the <u style="color: #013a63;">Joint Technical Commitee<br>JTC 1, Information Technology</u> of the<br>International Organization for Standardization<br>(ISO) and the International Electrotechnical<br>Commission (IEC), announced approval of the<br><u style="color: #013a63;">MathML Version 3.0 2nd Edition</u> as an ISO/IEC<br>International Standard (ISO/IEC 40314:2015).
+                    </div>
+                    <div style="padding-top: 25px">MathML 3.0 is the mark-up language used in</div>
+                </div>
+            </details>
+        </section>
+
+        <aside id="aside-2" style="float: right">
+            <div align="right" style="margin: 15px;">
+                <span style="color: #CCCCCC;">&#8883; </span>
+                <a href="">Skip</a>
+                <span style="color: #CCCCCC;"> &#8882;</span>
+            </div>
+            <div>
+                The World Wide Web Consortium (W3C) is an international community that develops open <u style="color: #013a63;">standards</u> to ensure the long-term growth of the Web. Read about the <u style="color: #013a63;">W3C mission</u>.
+            </div>
+            <ul>
+                <li><a href=""><h1>W3C BLOG <img src="../img/icon.png" alt=""></h1></a></li>
+                <li><a href="">
+                    <span>WICG: Evolving the</span><br>
+                    <span>Web from the</span><br>
+                    <span>ground up</span><br>
+                </a></li>
+            </ul>
+        </aside>
+    </div>
+</body>
+</html>
